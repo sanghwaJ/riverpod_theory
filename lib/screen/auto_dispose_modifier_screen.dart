@@ -8,7 +8,7 @@ class AutoDisposeModifierScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final state = ref.watch(authDisposeModifierProvider);
+    final state = ref.watch(autoDisposeModifierProvider);
 
     return DefaultLayout(
       title: 'AutoDisposeModifierScreen',

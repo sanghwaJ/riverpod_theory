@@ -33,15 +33,6 @@ class SelectProviderScreen extends ConsumerWidget {
             Text(
               state.toString(),
             ),
-            // Text(
-            //   state.name,
-            // ),
-            // Text(
-            //   state.isSpicy.toString(),
-            // ),
-            // Text(
-            //   state.hasBought.toString(),
-            // ),
             ElevatedButton(
               onPressed: () {
                 ref.read(selectProvider.notifier).toggleIsSpicy();

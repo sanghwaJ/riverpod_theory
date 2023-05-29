@@ -22,7 +22,7 @@ Future<int> gStateFuture(GStateFutureRef ref) async {
   return 10;
 }
 
-// 파라미터를 받는 riverpod은 Riverpod으로 사
+// 파라미터를 받는 riverpod은 Riverpod으로 사용
 @Riverpod(
   // keepAlive의 Default는 false(AutoDispose), 따라서 AutoDispose 기능을 끄고 싶으면 keepAlive: true로 선언
   keepAlive: true,
@@ -64,7 +64,6 @@ int gStateMultiply(
  * Riverpod CodeGeneration의 장점 3
  * => StateNotifierProvider를 편하게 작성할 수 있음
  */
-
 @riverpod
 class GStateNotifier extends _$GStateNotifier {
   // 꼭 build 함수를 override하여 초기값을 지정해줘야 함

@@ -53,7 +53,7 @@ class CodeGenerationScreen extends ConsumerWidget {
             ),
           ),
           Text('State4: $state4'),
-          // Consumer => 5개의 provider 중 단 하나만 상태가 변경되어도 전체 build가 재실행되는 비효율 해결
+          // Consumer => 여러 Provider 중, 단 하나만 상태가 변경되어도 전체 build가 재실행되는 비효율 해결
           // 특정 provider의 상태가 변경되면 아래의 builder 함수만 실행
           Consumer(
             builder: (context, ref, child) {

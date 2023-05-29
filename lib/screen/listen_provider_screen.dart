@@ -14,7 +14,6 @@ class _ListenProviderScreen extends ConsumerState<ListenProviderScreen>
     with TickerProviderStateMixin {
   late final TabController controller;
 
-
   @override
   void initState() {
     super.initState();
@@ -22,7 +21,7 @@ class _ListenProviderScreen extends ConsumerState<ListenProviderScreen>
     controller = TabController(
       length: 10,
       vsync: this,
-      // initState 한 번만 실행되기 때문에 ref.watch를 사용하면 안됨
+      // initState는 한 번만 실행되기 때문에 ref.watch를 사용하면 안됨
       initialIndex: ref.read(listenProvider),
     );
   }
